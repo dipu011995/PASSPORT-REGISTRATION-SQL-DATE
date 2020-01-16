@@ -19,38 +19,7 @@ public class ApplicationReviewController {
 	
 	@Autowired
 	private PassportMgmtService passportService;
-	
-//	@RequestMapping(value = "/appReview")
-//	public String displayApplicationReviewForm(HttpServletRequest req,Model model) {
-//		
-//		int educationId = Integer.parseInt(req.getParameter("eduId"));
-//		
-//		 EducationalDetailsEntity edEntity = passportService.getEducationalDetailsById(educationId);
-//		
-//		 EducationDetails eduDetails = new EducationDetails();
-//		 
-//		 BeanUtils.copyProperties(edEntity, eduDetails);
-//		 
-//		 eduDetails.setPid(edEntity.getPerDtlsEntity().getPid());
-//		 
-//	
-//		 PersonDetailsEntity perEntity = edEntity.getPerDtlsEntity();
-////		 BeanUtils.copyProperties(perEntity, edEntity.getPerDtlsEntity());		 
-//		 
-//		 PersonDetails perDetails = new PersonDetails();
-//		 BeanUtils.copyProperties(perEntity, perDetails);
-//		 
-//		 PassportDetails passportDetails = new PassportDetails();
-//		 
-//		 BeanUtils.copyProperties(eduDetails, passportDetails);
-//		 BeanUtils.copyProperties(perDetails, passportDetails);
-//		 
-//		 model.addAttribute("passportDetails", passportDetails);
-//		return "application_review";
-//	}
-	
-	
-	
+		
 	@RequestMapping(value = "/appReview")
 	public String displayApplicationReviewForm(HttpServletRequest req,Model model) {
 		System.out.println("ApplicationReviewController.displayApplicationReviewForm()");
